@@ -46,16 +46,7 @@ def number_to_full_month_name(month)
 end
 
 def number_to_short_month_name(month)
-  case month
-  when 1 
-    return "Jan"
-  when 3
-    return "Mar"
-  when 9 
-    return "Sep"
-  else
-    return "err"
-  end
+  return number_to_full_month_name(month[0..2])
 end
 
 def volume_of_cube(side)
